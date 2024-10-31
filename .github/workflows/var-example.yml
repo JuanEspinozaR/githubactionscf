@@ -1,0 +1,14 @@
+name: This is an example about how to use var on githubactions
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    env:
+      MY_VAR: My env var
+    steps:
+      - name: Testing
+        env:
+          STEP_MY_VAR: Hello Juan Esponoza
+        run: echo 'Step var $STEP_MY_VAR'
