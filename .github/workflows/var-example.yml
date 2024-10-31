@@ -11,4 +11,4 @@ jobs:
       - name: Testing
         env:
           STEP_MY_VAR: Hello Juan Esponoza
-        run: echo 'Step var $STEP_MY_VAR'
+        run: echo "Step var $STEP_MY_VAR"
